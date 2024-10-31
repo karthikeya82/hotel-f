@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-text {
   display: flex;
-  flex-direction: column;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 8px; /* Adds space between the icon and the text */
+}
+
+.size-6 {
+  width: 40px;
+  height: 40px;
+}
+
+a{
+  text-decoration: none;
+}
+.hotel{
+  font-size: 18px; 
+  vertical-align: middle;
+  color: red;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.header{
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.any
+{
+
+    display: flex;
+    border: 1px solid #08090a; /* Example grey color (#d1d5db is grey-300 in Tailwind) */
+    border-radius: 15px; /* Adjust this value to control the roundness */
+    gap:1px;
+    padding-top: 0.5rem;
+padding-bottom: 0.5rem; 
+padding-left: 1rem;
+padding-right: 1rem;
+gap: 0.5rem; 
+border-width: 1px; 
+box-shadow: 0 4px 6px rgba(107, 114, 128, 0.5);
+justify-content: center;
+text-align:justify;
+align-items: center;
+
+
+}
+
+.divide{
+  border-left-width: 1px;         /* Sets the width of the left border */
+  border-left-style: solid;        /* Defines the style of the left border (e.g., solid, dashed) */
+  border-left-color: #151516;  
+  height: 100%;
+  
+}
+
+.small-button{
+  width: 24px; /* Adjust button width */
+  height: 24px; /* Adjust button height */
+  padding: 4px; /* Add some padding around the SVG */
+  background-color: transparent; /* Optional: Make background transparent */
+  border: none; /* Optional: Remove border */
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.layout{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Lb{
+  margin-top: 4rem;
+  flex-grow: 1;
+  display: flex;
+    align-items: center;    /* Centers items vertically */
+    justify-content: space-around; /* Adds equal space around each item horizontally */
+  
+}
+.Login{
+  font-size: 2.25rem;
+line-height: 2.5rem; 
+text-align: center;
+}
+.form {
+  max-width: 28rem; /* Equivalent to max-w-md (28rem or 448px) */
+  margin-left: auto; /* Centers the element horizontally */
+  margin-right: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  width: 100%;               /* Equivalent to w-full */
+  border: 1px solid #d1d5db; /* Default border color in Tailwind (gray-300) */
+  margin-top: 0.25rem;       /* Equivalent to my-1 */
+  margin-bottom: 0.25rem;
+  padding-top: 0.5rem;       /* Equivalent to py-2 */
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;     /* Equivalent to px-3 */
+  padding-right: 0.75rem;
+  border-radius: 1rem;       /* Equivalent to rounded-2xl */
+}
+button {
+  background-color: #e2e8f0; /* Equivalent to bg-gray-300 */
+  color: black;
+  padding: 0.5rem; /* Equivalent to Tailwind's p-2 */
+  border-radius: 0.25rem; /* Equivalent to Tailwind's rounded */
+}
+button.primary {
+  background-color: #F5385D; /* Custom color */
+  padding: 0.5rem;           /* Equivalent to p-2 */
+  width: 100%;               /* Equivalent to w-full */
+  color: #ffffff;            /* Equivalent to text-white */
+  border-radius: 1rem;       /* Equivalent to rounded-2xl */
+  
+}
+.middle{
+  margin-top: 8rem;
+}
+.d{
+  text-align: center;
+  padding-top : 2rem;
+  padding-bottom: 2rem;
+}
+
+.nav_bar{
+  width:100%;
+  margin-top: 2rem; 
+  justify-content: center;
+  display: flex;
+}
+
+.book{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  gap: 2px;
+ 
+}
+
+.book1{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  border-radius: 9999px;
+  gap: 2px;
+   background-color: #F5385D;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.profile{
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 20rem; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  
 }
